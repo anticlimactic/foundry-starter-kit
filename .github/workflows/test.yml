@@ -29,6 +29,11 @@ jobs:
         id: build
 
       - name: Run Forge tests
+        # env:
+        #   ETH_RPC_URL: ${{ secrets.ETH_RPC_URL }}
+        #   ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+        # use the following for mainnet fork tests:
+        # make fork
         run: |
-          forge test -vvv
+          make test
         id: test
