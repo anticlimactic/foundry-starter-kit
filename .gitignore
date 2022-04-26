@@ -1,2 +1,6 @@
+# foundry
 cache/
 out/
+
+# node
+node_modules/
