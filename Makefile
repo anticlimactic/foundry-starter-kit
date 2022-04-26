@@ -11,6 +11,8 @@ ETHERSCAN := ${ETHERSCAN}
 build  :; forge b
 fork   :; forge t -vvv -f ${FORK_URL} --etherscan-api-key ${ETHERSCAN}
 forkm :; forge t -vvv -f ${FORK_URL} -m $(t) --etherscan-api-key ${ETHERSCAN}
+forkp :; forge t -vvv -f ${FORK_URL} --etherscan-api-key ${ETHERSCAN} --fork-block-number ${BLOCK_NUMBER}
+forkmp :; forge t -vvv -f ${FORK_URL} -m $(t) --etherscan-api-key ${ETHERSCAN} --fork-block-number ${BLOCK_NUMBER}
 # local tests without fork
 test  :; forge t -vvv
 testm :; forge t -vvv -m $(t)
