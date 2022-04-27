@@ -11,7 +11,7 @@ Features:
 
 ### Setup
 
-`forge init --template git@github.com:anticlimactic/foundry-starter-kit.git name`
+`forge init --template https://github.com/anticlimactic/foundry-starter-kit.git name`
 
 ### Commands
 
