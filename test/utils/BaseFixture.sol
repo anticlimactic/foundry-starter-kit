@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
+import {ExtendedTest} from './ExtendedTest.sol';
 
-import {Test} from 'forge-std/Test.sol';
-import {ExtendedDSTest} from './ExtendedDSTest.sol';
-
-contract BaseFixture is Test, ExtendedDSTest {
+contract BaseFixture is ExtendedTest {
     function setUp() public virtual {}
 }
