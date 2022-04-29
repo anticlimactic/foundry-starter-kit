@@ -11,6 +11,14 @@ Features:
 
 ### Setup
 
+I recommend the following steps for a clean repository:
+
+- visit [this page](https://github.com/anticlimactic/foundry-starter-kit.git) and click 'use template' to create a new repository from the template with a single commit.
+- `git clone --recursive <your-github-repository>`
+- you may wish to `git commit --amend` to fix up the commit for the linter.
+
+Alternatively, you may use it like so, but you will need to `git rebase -i HEAD@{0}` to clean up the commits.
+
 `forge init --template https://github.com/anticlimactic/foundry-starter-kit.git name`
 
 ### Commands
