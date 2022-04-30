@@ -4,3 +4,6 @@ out/
 
 # node
 node_modules/
+
+# env
+.env
