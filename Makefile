@@ -7,7 +7,7 @@ update:; forge update
 
 # Build & test
 FORK_URL := ${ETH_RPC_URL}
-ETHERSCAN := ${ETHERSCAN}
+ETHERSCAN := ${ETHERSCAN_API_KEY}
 build  :; forge b
 fork   :; forge t -vvv -f ${FORK_URL} --etherscan-api-key ${ETHERSCAN}
 forkm :; forge t -vvv -f ${FORK_URL} -m $(t) --etherscan-api-key ${ETHERSCAN}
