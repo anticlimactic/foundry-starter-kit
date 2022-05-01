@@ -7,11 +7,12 @@
       "const-name-snakecase": "warn",
       "function-max-lines": "warn",
       "func-visibility": ["warn", { "ignoreConstructors": true }],
-      "max-line-length": ["warn", 160],
+      "max-line-length": ["warn", 80],
       "avoid-suicide": "error",
       "avoid-sha3": "warn",
       "not-rely-on-time": "off",
       "private-vars-leading-underscore": "off",
-      "reason-string": ["warn", { "maxLength": 64 }]
+      "reason-string": ["warn", { "maxLength": 64 }],
+      "quotes": ["error","single"]
     }
   }
